@@ -6,50 +6,74 @@
     <title>Lodestar Maritime Service</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        .hero-section { background: #002b36; color: white; padding: 60px 0; }
-        .service-card { border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .hero-section { background: #002b36; color: white; padding: 80px 0; }
+        .service-card { border: none; box-shadow: 0 4px 12px rgba(0,0,0,0.15); transition: 0.3s; height: 100%; }
+        .service-card:hover { transform: translateY(-5px); }
+        .whatsapp-btn { background-color: #25D366; color: white; border: none; font-weight: bold; }
+        .whatsapp-btn:hover { background-color: #128C7E; color: white; }
+        .contact-link { color: #268bd2; text-decoration: none; font-weight: 500; }
     </style>
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#">LODESTAR MARITIME</a>
+            <a class="navbar-brand fw-bold" href="#">LODESTAR MARITIME</a>
+            <div class="d-flex align-items-center">
+                <a href="https://wa.me/8801976848901" class="btn whatsapp-btn btn-sm me-2" target="_blank">WhatsApp</a>
+                <a href="mailto:lodestarmaritimeservice@gmail.com" class="btn btn-outline-info btn-sm">Email</a>
+            </div>
         </div>
     </nav>
 
     <header class="hero-section text-center">
         <div class="container">
-            <h1>Lodestar Maritime Service</h1>
-            <p class="lead">Precision Engineering for the Modern Fleet</p>
+            <h1 class="display-4 fw-bold">Lodestar Maritime Service</h1>
+            <p class="lead mb-4">Precision 3D Vessel Modeling & Stability Solutions</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <a href="https://wa.me/8801976848901" class="btn whatsapp-btn btn-lg px-4" target="_blank">Chat on WhatsApp</a>
+                <a href="mailto:lodestarmaritimeservice@gmail.com" class="btn btn-outline-light btn-lg px-4">Send Email</a>
+            </div>
         </div>
     </header>
 
     <main class="container my-5">
-        <div class="row text-center">
+        <div class="row g-4 text-center">
             <div class="col-md-4">
                 <div class="card service-card p-4">
                     <h3>3D Modeling</h3>
-                    <p>High-fidelity vessel modeling using Rhino 3D for production and visualization.</p>
+                    <p class="text-muted">Rhino 3D modeling for dredgers, tugs, and barges.</p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card service-card p-4">
                     <h3>GA Design</h3>
-                    <p>Comprehensive General Arrangement plans tailored to operational requirements.</p>
+                    <p class="text-muted">Comprehensive General Arrangement planning and layout.</p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card service-card p-4">
                     <h3>Stability</h3>
-                    <p>Intact and damage stability calculations ensuring regulatory compliance.</p>
+                    <p class="text-muted">Expert intact and damage stability calculations.</p>
                 </div>
             </div>
         </div>
     </main>
 
-    <footer class="text-center py-4 border-top">
-        <p>&copy; 2026 Lodestar Maritime Service | Bangladesh</p>
+    <section class="bg-light py-5">
+        <div class="container text-center">
+            <h3 class="mb-4">Get in Touch</h3>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <p class="mb-2">📧 <a href="mailto:lodestarmaritimeservice@gmail.com" class="contact-link">lodestarmaritimeservice@gmail.com</a></p>
+                    <p class="mb-0">📱 <a href="tel:+8801976848901" class="contact-link">+8801976848901</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-4 bg-dark text-white-50">
+        <p class="mb-0">&copy; 2026 Lodestar Maritime Service | Bangladesh</p>
     </footer>
 
 </body>
